@@ -12,12 +12,11 @@ app: java-test-app
 template: 
 metadata: 
 labels: 
-deployment.yaml 
-        app: java-test-app 
+  app: java-test-app 
     spec: 
       containers: 
         - name: java-test-app 
-          image: rishvanthbkr0709/java-test-app:latest 
+          image: dockerhub-username/java-test-app:latest 
           imagePullPolicy: Always 
           ports: 
             - containerPort: 8080 
